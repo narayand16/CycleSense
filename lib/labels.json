@@ -1,0 +1,114 @@
+{
+  "app": {
+    "name": "CycleSense",
+    "description": "Track your menstrual cycle and fertility windows with ease and privacy",
+    "seo": {
+      "title": "CycleSense - Period & Fertility Tracker",
+      "description": "Track your menstrual cycle and fertility windows with ease and privacy. Free period tracking app with ovulation calendar and cycle predictions.",
+      "keywords": "period tracker, menstrual cycle, fertility calendar, ovulation tracker, menstruation app"
+    }
+  },
+  "pages": {
+    "dashboard": {
+      "cycleCalendar": "Your Cycle Calendar",
+      "logPeriod": "Log Your Period",
+      "fertilityWindow": "Fertility Window",
+      "cycleStats": "Cycle Statistics",
+      "cycleTrends": "Cycle Length Trends"
+    },
+    "calendar": {
+      "title": "Calendar View",
+      "description": "View your period days, fertile window, and ovulation dates",
+      "legend": {
+        "title": "Calendar Legend",
+        "periodDays": "Period Days",
+        "fertileWindow": "Fertile Window",
+        "ovulationDay": "Ovulation Day",
+        "predictedDays": "Predicted Days"
+      },
+      "tabs": {
+        "calendar": "Calendar",
+        "logPeriod": "Log Period"
+      }
+    },
+    "settings": {
+      "title": "App Settings",
+      "description": "Customize your period tracker preferences",
+      "tabs": {
+        "cycle": "Cycle Settings",
+        "about": "About CycleSense"
+      },
+      "about": {
+        "privacy": {
+          "title": "Privacy",
+          "content": "CycleSense stores all your period tracking data locally in your browser. Your information never leaves your device and is not shared with any servers or third parties."
+        },
+        "howItWorks": {
+          "title": "How It Works",
+          "content": "CycleSense uses your cycle history to predict future periods and fertility windows. Predictions become more accurate as you log more data. The app calculates fertility windows based on the average 28-day cycle, with ovulation typically occurring 14 days before the next period."
+        },
+        "dataStorage": {
+          "title": "Data Storage",
+          "content": "Your data is stored using your browser's localStorage feature. Clearing your browser data or using private/incognito mode may affect your saved information. For best results, use CycleSense consistently on the same device and browser."
+        }
+      }
+    }
+  },
+  "forms": {
+    "periodLog": {
+      "startDate": {
+        "label": "Period Start Date",
+        "placeholder": "Select start date"
+      },
+      "endDate": {
+        "label": "Period End Date",
+        "placeholder": "Select end date"
+      },
+      "notes": {
+        "label": "Notes (optional)",
+        "placeholder": "Add any symptoms or notes about this period..."
+      },
+      "submit": "Add Period",
+      "submitting": "Saving..."
+    },
+    "settings": {
+      "cycleLength": {
+        "label": "Average Cycle Length (days)",
+        "description": "The number of days from the first day of your period to the day before your next period. The average is 28 days, but can range from 21 to 45 days."
+      },
+      "periodLength": {
+        "label": "Average Period Length (days)",
+        "description": "The number of days your period typically lasts. Most periods last 3 to 7 days."
+      },
+      "submit": "Save Settings",
+      "reset": "Reset All Data",
+      "resetConfirm": {
+        "title": "Are you sure?",
+        "description": "This action will permanently delete all your tracking data and reset your settings. This cannot be undone."
+      }
+    }
+  },
+  "messages": {
+    "success": {
+      "periodAdded": "Period has been added to your calendar",
+      "settingsSaved": "Your cycle settings have been updated",
+      "dataCleared": "All your tracking data has been reset"
+    },
+    "error": {
+      "selectDates": "Please select both start and end dates for your period",
+      "startAfterEnd": "Start date cannot be after end date",
+      "longDuration": "Period duration seems unusually long. Please verify your dates.",
+      "invalidCycleLength": "Cycle length should be between 21 and 45 days",
+      "invalidPeriodLength": "Period length should be between 2 and 10 days"
+    },
+    "noData": {
+      "cycles": "No cycle data available",
+      "addPeriod": "Add your period to see statistics",
+      "trends": "Track at least two cycles to see your trends",
+      "fertilityWindow": {
+        "title": "No upcoming fertility days",
+        "description": "Check back after your next period"
+      }
+    }
+  }
+}
