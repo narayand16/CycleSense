@@ -36,7 +36,16 @@
       "description": "Customize your period tracker preferences",
       "tabs": {
         "cycle": "Cycle Settings",
+        "data": "Data Management",
         "about": "About CycleSense"
+      },
+      "dataManagement": {
+        "title": "Data Export & Import",
+        "description": "Export your data to save it or transfer it to another device. You can also import previously exported data.",
+        "export": "Export Data",
+        "import": "Import Data",
+        "importing": "Importing...",
+        "note": "Note: Importing data will replace all existing data. Make sure to export your current data first if you want to keep it."
       },
       "about": {
         "privacy": {
@@ -92,14 +101,26 @@
     "success": {
       "periodAdded": "Period has been added to your calendar",
       "settingsSaved": "Your cycle settings have been updated",
-      "dataCleared": "All your tracking data has been reset"
+      "dataCleared": "All your tracking data has been reset",
+      "dataExported": {
+        "title": "Data Exported",
+        "description": "Your data has been exported successfully. Keep this file safe for future use."
+      },
+      "dataImported": {
+        "title": "Data Imported",
+        "description": "Your data has been imported successfully. The page will refresh to show your imported data."
+      }
     },
     "error": {
       "selectDates": "Please select both start and end dates for your period",
       "startAfterEnd": "Start date cannot be after end date",
       "longDuration": "Period duration seems unusually long. Please verify your dates.",
       "invalidCycleLength": "Cycle length should be between 21 and 45 days",
-      "invalidPeriodLength": "Period length should be between 2 and 10 days"
+      "invalidPeriodLength": "Period length should be between 2 and 10 days",
+      "dataImport": {
+        "title": "Import Failed",
+        "description": "There was an error importing your data. Please make sure you're using a valid CycleSense data file."
+      }
     },
     "noData": {
       "cycles": "No cycle data available",

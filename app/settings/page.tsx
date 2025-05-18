@@ -1,6 +1,7 @@
 import { Header } from "@/components/header";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { UserSettingsForm } from "@/components/user-settings-form";
+import { DataManagement } from "@/components/data-management";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import labels from '@/lib/labels.json';
 
@@ -24,12 +25,19 @@ export default function SettingsPage() {
                 <Tabs defaultValue="cycle" className="w-full">
                   <TabsList className="mb-6">
                     <TabsTrigger value="cycle">{labels.pages.settings.tabs.cycle}</TabsTrigger>
+                    <TabsTrigger value="data">{labels.pages.settings.tabs.data}</TabsTrigger>
                     <TabsTrigger value="about">{labels.pages.settings.tabs.about}</TabsTrigger>
                   </TabsList>
                   
                   <TabsContent value="cycle" className="mt-0">
                     <div className="max-w-2xl">
                       <UserSettingsForm />
+                    </div>
+                  </TabsContent>
+
+                  <TabsContent value="data" className="mt-0">
+                    <div className="max-w-2xl">
+                      <DataManagement />
                     </div>
                   </TabsContent>
                   

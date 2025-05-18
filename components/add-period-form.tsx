@@ -18,7 +18,7 @@ import {
 } from "date-fns";
 import { cn } from "@/lib/utils";
 import { CalendarIcon } from "lucide-react";
-import { MenstrualCycle } from "@/lib/types";
+import type { MenstrualCycle } from "@/lib/types";
 import { addCycle, getUserData } from "@/lib/storage";
 import { useToast } from "@/hooks/use-toast";
 import { Label } from "@/components/ui/label";
@@ -157,7 +157,6 @@ export function AddPeriodForm({ onSuccess }: { onSuccess?: () => void }) {
 								(date) =>
 									isAfter(date, new Date()) || // Future dates
 									(startDate ? isBefore(date, startDate) : true) || // Before start date
-									// Ensure this part returns boolean even if startDate is undefined
 									(startDate ? differenceInDays(date, startDate) > 14 : false) // More than 14 days from start
 							}
 						/>

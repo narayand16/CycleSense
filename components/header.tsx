@@ -3,7 +3,7 @@
 import { useState } from "react";
 import { ModeToggle } from "@/components/mode-toggle";
 import { Button } from "@/components/ui/button";
-import { Moon, Sun, Calendar, Settings2 } from "lucide-react";
+import { AudioWaveform as Waveform, Calendar, Settings2 } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { usePathname } from "next/navigation";
 import Link from "next/link";
@@ -13,7 +13,7 @@ export function Header() {
   const pathname = usePathname();
   
   const links = [
-    { path: "/", label: "Dashboard", icon: Moon },
+    { path: "/", label: "Dashboard", icon: Waveform },
     { path: "/calendar", label: "Calendar", icon: Calendar },
     { path: "/settings", label: "Settings", icon: Settings2 },
   ];
@@ -22,7 +22,7 @@ export function Header() {
     <header className="sticky top-0 z-50 w-full bg-card/70 backdrop-blur-md border-b">
       <div className="container flex h-16 items-center justify-between px-4">
         <div className="flex items-center space-x-2">
-          <Moon className="h-6 w-6 text-primary" />
+          <Waveform className="h-6 w-6 text-primary rotate-90" />
           <span className="font-semibold text-xl">{labels.app.name}</span>
         </div>
         
